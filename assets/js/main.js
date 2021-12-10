@@ -139,3 +139,16 @@ loadImages = (data) => {
     document.querySelector("#grid").appendChild(image);
   }
 }
+
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  let y = document.forms["myForm"]["lname"].value;
+  if (y == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+}
